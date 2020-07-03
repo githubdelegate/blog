@@ -7,6 +7,4 @@
 5. cmd+b 编译一下，会提示错误，`Core.hpp header must be compiled as C++`
 6. 把OpenCVWrapper.m 修改为 `.mm`
 7. 再重新编译 ok
-8. `重要` 如果`OpenCVWrapper.h`里面引入了`opencv`的头文件，就会一直编译失败
-
-   
+8. `重要` 如果`OpenCVWrapper.h`里面引入了`opencv`的头文件，就会一直编译失败 提示 `找不到c++`
