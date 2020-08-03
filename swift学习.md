@@ -125,3 +125,17 @@ lazy var someClosure = {
 > 相反的，在被捕获的引用可能会变为 nil 时，将闭包内的捕获定义为 弱引用。弱引用总是可选类型，并且当引用的实例被销毁后，弱引用的值会自动置为 nil。这使我们可以在闭包体内检查它们是否存在。
 >> 注意
 > 如果被捕获的引用绝对不会变为 nil，应该用无主引用，而不是弱引用。
+
+
+
+KVO https://juejin.im/post/5a6ed035518825734108308d
+
+
+
+### swift 中关联对象使用
+
+> [Swift在扩展中关联对象](https://www.jianshu.com/p/75de1a6e28f2)
+
+
+## 3. Result Never
+Why not use throws?
