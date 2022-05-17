@@ -10,17 +10,17 @@
     1. undo 核心函数就是这个，当点击undo 按钮的时候，就会执行注册过的block，这个block可以捕获值，就是下面的diff ，每次点击undo的时候，执行的block里面的diff数据都是以前注册的时候捕获的, diff 都是struct 
     2. A closure can capture constants and variables from the surrounding context in which it’s defined. The closure can then refer to and modify the values of those constants and variables from within its body, even if the original scope that defined the constants and variables no longer exists.
 
-```swift
-    self.undoManager?.registerUndo(withTarget: self) { target in
-            target.modifyModel{ model in
-                model = diff.from
-            }
-        }
-```
+        ```swift
+            self.undoManager?.registerUndo(withTarget: self) { target in
+                    target.modifyModel{ model in
+                        model = diff.from
+                    }
+                }
+        ```
 
 
     3. DIFF code
-    
+
 ```swift 
 
 /// 绘制模型
@@ -86,3 +86,5 @@ struct ZYZDrawModel {
         self.undoBtn.isSelected = self.undoBtn.isEnabled
     }
 ```
+> [学习代码](./People-Keeper.zip)
+
